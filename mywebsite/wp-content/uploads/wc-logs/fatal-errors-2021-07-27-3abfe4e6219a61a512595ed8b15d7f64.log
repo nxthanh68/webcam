@@ -1,0 +1,85 @@
+2021-07-27T11:36:39+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(256, 'WP Cron')
+#5 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mywebsite\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php on line 303
+
+2021-07-27T11:36:59+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_process...', Array)
+#3 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(356, 'Async Request')
+#5 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\mywebsite\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php on line 303
+
+2021-07-27T11:37:46+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(442, 'WP Cron')
+#5 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mywebsite\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php on line 303
+
+2021-07-27T11:38:57+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(447, 'Async Request')
+#5 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): ActionScheduler_QueueRunner->run('Async Request')
+#7 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): WP_Async_Request->maybe_handle('')
+#12 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\mywebsite\wp-admin\admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php on line 303
+
+2021-07-27T12:07:21+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(448, 'WP Cron')
+#5 C:\xampp\htdocs\mywebsite\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(303): ActionScheduler_QueueRunner->run('WP Cron')
+#7 C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\mywebsite\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\mywebsite\wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown in C:\xampp\htdocs\mywebsite\wp-includes\class-wp-hook.php on line 303
+
